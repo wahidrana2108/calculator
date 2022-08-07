@@ -11,7 +11,7 @@
 <body><br>
     <div class="container side">
         <br>
-        <div class="display d-flex justify-content-end align-items-center p-3">text will be shown here</div><br>
+        <div class="display d-flex justify-content-end align-items-center p-3"><span id="output">0</span></div><br>
 
         <div class="">
             <button type="button" class="btn btn-dark me-3 mb-2 btn_size justify-content-center align-items-center" id="">7</button>
@@ -35,7 +35,7 @@
             <button type="button" class="btn btn-dark me-3 mb-2 btn_size justify-content-center align-items-center" id="">.</button>
             <button type="button" class="btn btn-dark me-3 mb-2 btn_size justify-content-center align-items-center" id="">0</button>
             <button type="button" class="btn btn-dark me-3 mb-2 btn_size justify-content-center align-items-center" id="">=</button>
-            <button type="button" class="btn btn-dark mb-2 btn_size justify-content-center align-items-center"><span id="+">1</span></button>
+            <button type="button" class="btn btn-dark mb-2 btn_size justify-content-center align-items-center"><span id="+">+</span></button>
         </div>
     </div>
 
@@ -57,8 +57,9 @@
         var btn_plus = document.getElementById('+');
         btn_plus.addEventListener('click', function(){
             var plus = document.getElementById('+').innerText;
-            var plus_value =  parseFloat(plus);
-            alert(plus_value);
+            var plus_value =  plus;
+            console.log(plus_value);
+            document.getElementById('output').innerText = plus_value;
         })
 
 
