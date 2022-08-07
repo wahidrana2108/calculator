@@ -1,0 +1,17 @@
+.side{
+    height: fit-content;
+    width: fit-content;
+    border: 5px solid black;
+}
+
+.display{
+    height: 70px;
+    width: 210px;
+    border: 5px solid gray;
+}
+
+
+.btn_size{
+    height: 38px;
+    width: 38px;
+}
