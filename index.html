@@ -14,28 +14,28 @@
         <div class="display d-flex justify-content-end align-items-center p-3"><span id="output">0</span></div><br>
 
         <div class="">
-            <button type="button" class="btn btn-dark me-3 mb-2 btn_size justify-content-center align-items-center" id="">7</button>
-            <button type="button" class="btn btn-dark me-3 mb-2 btn_size justify-content-center align-items-center" id="">8</button>
-            <button type="button" class="btn btn-dark me-3 mb-2 btn_size justify-content-center align-items-center" id="">9</button>
-            <button type="button" class="btn btn-dark mb-2 btn_size justify-content-center align-items-center" id="">/</button>
+            <button type="button" class="btn btn-dark btn_size">7</button>
+            <button type="button" class="btn btn-dark btn_size">8</button>
+            <button type="button" class="btn btn-dark btn_size">9</button>
+            <button operatorBtn type="button" class="btn btn-dark me-0 btn_size" id="">/</button>
         </div>
         <div class="">
-            <button type="button" class="btn btn-dark me-3 mb-2 btn_size justify-content-center align-items-center" id="">4</button>
-            <button type="button" class="btn btn-dark me-3 mb-2 btn_size justify-content-center align-items-center" id="">5</button>
-            <button type="button" class="btn btn-dark me-3 mb-2 btn_size justify-content-center align-items-center" id="">6</button>
-            <button type="button" class="btn btn-dark mb-2 btn_size justify-content-center align-items-center" id="">*</button>
+            <button type="button" class="btn btn-dark btn_size">4</button>
+            <button type="button" class="btn btn-dark btn_size">5</button>
+            <button type="button" class="btn btn-dark btn_size">6</button>
+            <button operatorBtn type="button" class="btn btn-dark me-0  btn_size" id="">*</button>
         </div>
         <div class="">
-            <button type="button" class="btn btn-dark me-3 mb-2 btn_size justify-content-center align-items-center" id="">1</button>
-            <button type="button" class="btn btn-dark me-3 mb-2 btn_size justify-content-center align-items-center" id="">2</button>
-            <button type="button" class="btn btn-dark me-3 mb-2 btn_size justify-content-center align-items-center" id="">3</button>
-            <button type="button" class="btn btn-dark mb-2 btn_size justify-content-center align-items-center" id="">-</button>
+            <button type="button" class="btn btn-dark btn_size">1</button>
+            <button type="button" class="btn btn-dark btn_size">2</button>
+            <button type="button" class="btn btn-dark btn_size">3</button>
+            <button operatorBtn type="button" class="btn btn-dark me-0  btn_size" id="">-</button>
         </div>
         <div class="">
-            <button type="button" class="btn btn-dark me-3 mb-2 btn_size justify-content-center align-items-center" id="">.</button>
-            <button type="button" class="btn btn-dark me-3 mb-2 btn_size justify-content-center align-items-center" id="">0</button>
-            <button type="button" class="btn btn-dark me-3 mb-2 btn_size justify-content-center align-items-center" id="">=</button>
-            <button type="button" class="btn btn-dark mb-2 btn_size justify-content-center align-items-center"><span id="+">+</span></button>
+            <button type="button" class="btn btn-dark btn_size">.</button>
+            <button type="button" class="btn btn-dark btn_size">0</button>
+            <button type="button" class="btn btn-dark btn_size">=</button>
+            <button operatorBtn type="button" class="btn btn-dark me-0 btn_size">+</button>
         </div>
     </div>
 
@@ -54,15 +54,20 @@
 
     <script>
         
-        var btn_plus = document.getElementById('+');
-        btn_plus.addEventListener('click', function(){
-            var plus = document.getElementById('+').innerText;
-            var plus_value =  plus;
-            console.log(plus_value);
-            document.getElementById('output').innerText = plus_value;
+        // var btn_plus = document.querySelectorAll('+');
+        // btn_plus.addEventListener('click', function(){
+        //     var plus = document.getElementById('+').innerText;
+        //     var plus_value =  plus;
+        //     console.log(plus_value);
+        //     document.getElementById('output').innerText = plus_value;
+        // })
 
-            alert('thank you')
-        })
+        // var operatorButton = document.querySelectorAll('[operatorBtn]');
+        // operatorButton.addEventListener('click', function(){
+        //     operatorButton.forEach(button =>{
+                
+        //     })
+        // })
 
 
     </script>
